@@ -13,13 +13,13 @@
 		265AFD821E1DF666002F31CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 265AFD801E1DF666002F31CF /* LaunchScreen.storyboard */; };
 		265AFD8D1E1DF669002F31CF /* Test_DYZBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265AFD8C1E1DF669002F31CF /* Test_DYZBTests.swift */; };
 		265AFD981E1DF669002F31CF /* Test_DYZBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265AFD971E1DF669002F31CF /* Test_DYZBUITests.swift */; };
-		265AFDAE1E1E3D3E002F31CF /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 265AFDAC1E1E3D3E002F31CF /* Home.storyboard */; };
-		265AFDB11E1E3DE3002F31CF /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 265AFDB01E1E3DE3002F31CF /* Live.storyboard */; };
-		265AFDB41E1E3E09002F31CF /* Video.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 265AFDB21E1E3E09002F31CF /* Video.storyboard */; };
-		265AFDB61E1E3E4E002F31CF /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 265AFDB51E1E3E4E002F31CF /* Profile.storyboard */; };
-		265AFDB91E1E3E9A002F31CF /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 265AFDB71E1E3E9A002F31CF /* Follow.storyboard */; };
 		265AFDBB1E1E42D2002F31CF /* test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 265AFDBA1E1E42D2002F31CF /* test.storyboard */; };
 		265AFDBE1E1E45C0002F31CF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265AFDBD1E1E45C0002F31CF /* MainViewController.swift */; };
+		265AFDC01E1E4F1C002F31CF /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 265AFDBF1E1E4F1C002F31CF /* Follow.storyboard */; };
+		265AFDC21E1E4F29002F31CF /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 265AFDC11E1E4F29002F31CF /* Profile.storyboard */; };
+		265AFDC41E1E4F2E002F31CF /* Video.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 265AFDC31E1E4F2E002F31CF /* Video.storyboard */; };
+		265AFDC81E1E4F4F002F31CF /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 265AFDC71E1E4F4F002F31CF /* Live.storyboard */; };
+		265AFDCA1E1E4F55002F31CF /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 265AFDC91E1E4F55002F31CF /* Home.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,13 +52,13 @@
 		265AFD931E1DF669002F31CF /* Test_DYZBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test_DYZBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		265AFD971E1DF669002F31CF /* Test_DYZBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_DYZBUITests.swift; sourceTree = "<group>"; };
 		265AFD991E1DF66A002F31CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		265AFDAD1E1E3D3E002F31CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Test_DYZB/Base.lproj/Home.storyboard; sourceTree = SOURCE_ROOT; };
-		265AFDB01E1E3DE3002F31CF /* Live.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Live.storyboard; path = ../Main/Live.storyboard; sourceTree = "<group>"; };
-		265AFDB31E1E3E09002F31CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Test_DYZB/Base.lproj/Video.storyboard; sourceTree = SOURCE_ROOT; };
-		265AFDB51E1E3E4E002F31CF /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Profile.storyboard; path = ../Main/Profile.storyboard; sourceTree = "<group>"; };
-		265AFDB81E1E3E9A002F31CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Test_DYZB/Base.lproj/Follow.storyboard; sourceTree = SOURCE_ROOT; };
 		265AFDBA1E1E42D2002F31CF /* test.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = test.storyboard; path = ../Main/test.storyboard; sourceTree = "<group>"; };
 		265AFDBD1E1E45C0002F31CF /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		265AFDBF1E1E4F1C002F31CF /* Follow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Follow.storyboard; sourceTree = "<group>"; };
+		265AFDC11E1E4F29002F31CF /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		265AFDC31E1E4F2E002F31CF /* Video.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Video.storyboard; sourceTree = "<group>"; };
+		265AFDC71E1E4F4F002F31CF /* Live.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Live.storyboard; sourceTree = "<group>"; };
+		265AFDC91E1E4F55002F31CF /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,7 +154,7 @@
 		265AFDA61E1E2527002F31CF /* Follow */ = {
 			isa = PBXGroup;
 			children = (
-				265AFDB71E1E3E9A002F31CF /* Follow.storyboard */,
+				265AFDBF1E1E4F1C002F31CF /* Follow.storyboard */,
 			);
 			path = Follow;
 			sourceTree = "<group>";
@@ -162,7 +162,7 @@
 		265AFDA71E1E2527002F31CF /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				265AFDAC1E1E3D3E002F31CF /* Home.storyboard */,
+				265AFDC91E1E4F55002F31CF /* Home.storyboard */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -170,7 +170,7 @@
 		265AFDA81E1E2527002F31CF /* Live */ = {
 			isa = PBXGroup;
 			children = (
-				265AFDB01E1E3DE3002F31CF /* Live.storyboard */,
+				265AFDC71E1E4F4F002F31CF /* Live.storyboard */,
 			);
 			path = Live;
 			sourceTree = "<group>";
@@ -187,7 +187,7 @@
 		265AFDAA1E1E2527002F31CF /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				265AFDB51E1E3E4E002F31CF /* Profile.storyboard */,
+				265AFDC11E1E4F29002F31CF /* Profile.storyboard */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -202,7 +202,7 @@
 		265AFDAF1E1E3DB1002F31CF /* video */ = {
 			isa = PBXGroup;
 			children = (
-				265AFDB21E1E3E09002F31CF /* Video.storyboard */,
+				265AFDC31E1E4F2E002F31CF /* Video.storyboard */,
 			);
 			path = video;
 			sourceTree = "<group>";
@@ -322,15 +322,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				265AFDC21E1E4F29002F31CF /* Profile.storyboard in Resources */,
+				265AFDC01E1E4F1C002F31CF /* Follow.storyboard in Resources */,
 				265AFD821E1DF666002F31CF /* LaunchScreen.storyboard in Resources */,
+				265AFDCA1E1E4F55002F31CF /* Home.storyboard in Resources */,
 				265AFD7F1E1DF666002F31CF /* Assets.xcassets in Resources */,
-				265AFDB91E1E3E9A002F31CF /* Follow.storyboard in Resources */,
-				265AFDB41E1E3E09002F31CF /* Video.storyboard in Resources */,
+				265AFDC41E1E4F2E002F31CF /* Video.storyboard in Resources */,
 				265AFD7D1E1DF666002F31CF /* Main.storyboard in Resources */,
-				265AFDB61E1E3E4E002F31CF /* Profile.storyboard in Resources */,
-				265AFDB11E1E3DE3002F31CF /* Live.storyboard in Resources */,
+				265AFDC81E1E4F4F002F31CF /* Live.storyboard in Resources */,
 				265AFDBB1E1E42D2002F31CF /* test.storyboard in Resources */,
-				265AFDAE1E1E3D3E002F31CF /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,33 +407,6 @@
 				265AFD811E1DF666002F31CF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		265AFDAC1E1E3D3E002F31CF /* Home.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				265AFDAD1E1E3D3E002F31CF /* Base */,
-			);
-			name = Home.storyboard;
-			path = ../Main;
-			sourceTree = "<group>";
-		};
-		265AFDB21E1E3E09002F31CF /* Video.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				265AFDB31E1E3E09002F31CF /* Base */,
-			);
-			name = Video.storyboard;
-			path = ../Main;
-			sourceTree = "<group>";
-		};
-		265AFDB71E1E3E9A002F31CF /* Follow.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				265AFDB81E1E3E9A002F31CF /* Base */,
-			);
-			name = Follow.storyboard;
-			path = ../Main;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
