@@ -13,7 +13,6 @@
 		265AFD821E1DF666002F31CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 265AFD801E1DF666002F31CF /* LaunchScreen.storyboard */; };
 		265AFD8D1E1DF669002F31CF /* Test_DYZBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265AFD8C1E1DF669002F31CF /* Test_DYZBTests.swift */; };
 		265AFD981E1DF669002F31CF /* Test_DYZBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265AFD971E1DF669002F31CF /* Test_DYZBUITests.swift */; };
-		265AFDBB1E1E42D2002F31CF /* test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 265AFDBA1E1E42D2002F31CF /* test.storyboard */; };
 		265AFDBE1E1E45C0002F31CF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265AFDBD1E1E45C0002F31CF /* MainViewController.swift */; };
 		265AFDC01E1E4F1C002F31CF /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 265AFDBF1E1E4F1C002F31CF /* Follow.storyboard */; };
 		265AFDC21E1E4F29002F31CF /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 265AFDC11E1E4F29002F31CF /* Profile.storyboard */; };
@@ -52,7 +51,6 @@
 		265AFD931E1DF669002F31CF /* Test_DYZBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test_DYZBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		265AFD971E1DF669002F31CF /* Test_DYZBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_DYZBUITests.swift; sourceTree = "<group>"; };
 		265AFD991E1DF66A002F31CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		265AFDBA1E1E42D2002F31CF /* test.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = test.storyboard; path = ../Main/test.storyboard; sourceTree = "<group>"; };
 		265AFDBD1E1E45C0002F31CF /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		265AFDBF1E1E4F1C002F31CF /* Follow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Follow.storyboard; sourceTree = "<group>"; };
 		265AFDC11E1E4F29002F31CF /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
@@ -210,7 +208,6 @@
 		265AFDBC1E1E43EC002F31CF /* Test */ = {
 			isa = PBXGroup;
 			children = (
-				265AFDBA1E1E42D2002F31CF /* test.storyboard */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -330,7 +327,6 @@
 				265AFDC41E1E4F2E002F31CF /* Video.storyboard in Resources */,
 				265AFD7D1E1DF666002F31CF /* Main.storyboard in Resources */,
 				265AFDC81E1E4F4F002F31CF /* Live.storyboard in Resources */,
-				265AFDBB1E1E42D2002F31CF /* test.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
