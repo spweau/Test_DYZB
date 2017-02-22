@@ -27,6 +27,7 @@
 		81E1BB5C1E5D88AD008167C8 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1BB5B1E5D88AD008167C8 /* Common.swift */; };
 		81E1BB5E1E5DA841008167C8 /* PageContainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1BB5D1E5DA841008167C8 /* PageContainView.swift */; };
 		81E1BB601E5DAEAE008167C8 /* UIColor-Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1BB5F1E5DAEAE008167C8 /* UIColor-Extention.swift */; };
+		81E1BB621E5E11EB008167C8 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1BB611E5E11EB008167C8 /* RecommendViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		81E1BB5B1E5D88AD008167C8 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		81E1BB5D1E5DA841008167C8 /* PageContainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContainView.swift; sourceTree = "<group>"; };
 		81E1BB5F1E5DAEAE008167C8 /* UIColor-Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extention.swift"; sourceTree = "<group>"; };
+		81E1BB611E5E11EB008167C8 /* RecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				81E1BB521E5D7304008167C8 /* HomeViewController.swift */,
+				81E1BB611E5E11EB008167C8 /* RecommendViewController.swift */,
 				265AFDC91E1E4F55002F31CF /* Home.storyboard */,
 			);
 			path = Controller;
@@ -435,6 +438,7 @@
 			files = (
 				81E1BB5A1E5D86EE008167C8 /* PageTitleview.swift in Sources */,
 				81E1BB5E1E5DA841008167C8 /* PageContainView.swift in Sources */,
+				81E1BB621E5E11EB008167C8 /* RecommendViewController.swift in Sources */,
 				81E1BB601E5DAEAE008167C8 /* UIColor-Extention.swift in Sources */,
 				265AFD781E1DF665002F31CF /* AppDelegate.swift in Sources */,
 				81E1BB511E5D72BC008167C8 /* MainViewController.swift in Sources */,
