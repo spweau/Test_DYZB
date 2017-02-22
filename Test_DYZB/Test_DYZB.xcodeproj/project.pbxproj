@@ -19,6 +19,8 @@
 		265AFDC41E1E4F2E002F31CF /* Video.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 265AFDC31E1E4F2E002F31CF /* Video.storyboard */; };
 		265AFDC81E1E4F4F002F31CF /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 265AFDC71E1E4F4F002F31CF /* Live.storyboard */; };
 		265AFDCA1E1E4F55002F31CF /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 265AFDC91E1E4F55002F31CF /* Home.storyboard */; };
+		81E1BB471E5D6F6E008167C8 /* TestSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81E1BB461E5D6F6E008167C8 /* TestSB.storyboard */; };
+		81E1BB491E5D7108008167C8 /* TestSB1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81E1BB481E5D7108008167C8 /* TestSB1.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		265AFDC31E1E4F2E002F31CF /* Video.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Video.storyboard; sourceTree = "<group>"; };
 		265AFDC71E1E4F4F002F31CF /* Live.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Live.storyboard; sourceTree = "<group>"; };
 		265AFDC91E1E4F55002F31CF /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		81E1BB461E5D6F6E008167C8 /* TestSB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TestSB.storyboard; path = Test_DYZB/Classes/Home/TestSB.storyboard; sourceTree = SOURCE_ROOT; };
+		81E1BB481E5D7108008167C8 /* TestSB1.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TestSB1.storyboard; path = Test_DYZB/Classes/Home/TestSB1.storyboard; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +212,8 @@
 		265AFDBC1E1E43EC002F31CF /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				81E1BB461E5D6F6E008167C8 /* TestSB.storyboard */,
+				81E1BB481E5D7108008167C8 /* TestSB1.storyboard */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -320,6 +326,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				265AFDC21E1E4F29002F31CF /* Profile.storyboard in Resources */,
+				81E1BB491E5D7108008167C8 /* TestSB1.storyboard in Resources */,
+				81E1BB471E5D6F6E008167C8 /* TestSB.storyboard in Resources */,
 				265AFDC01E1E4F1C002F31CF /* Follow.storyboard in Resources */,
 				265AFD821E1DF666002F31CF /* LaunchScreen.storyboard in Resources */,
 				265AFDCA1E1E4F55002F31CF /* Home.storyboard in Resources */,
