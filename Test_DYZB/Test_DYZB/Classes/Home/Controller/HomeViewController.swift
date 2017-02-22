@@ -13,16 +13,20 @@ private let kTitleViewH : CGFloat = 40
 class HomeViewController: UIViewController {
 
     // 懒加载 pageTitleView
-    fileprivate lazy var pageTitleview : PageTitleview = {
+    fileprivate lazy var pageTitleview : PageTitleview = { [weak self] in
     
         let titleFrame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH, width: kScreenW, height: kTitleViewH)
         let titles : [String] = ["推荐" , "游戏" , "娱乐" , "趣玩"]
         let titleView = PageTitleview(frame: titleFrame, titles: titles)
         titleView.backgroundColor = UIColor.white
+        
+        // 设置代理
+        titleView.delegate = self
+        
         return titleView
     }()
     
-    fileprivate lazy var pageContentVikew : PageContainView = {
+    fileprivate lazy var pageContentView : PageContainView = { [weak self] in
     
         // 1. 确定内容的frame
         let contentH = kScreenH - kStatusBarH - kNavigationBarH - kTitleViewH
@@ -37,6 +41,9 @@ class HomeViewController: UIViewController {
         }
         
         let contentView = PageContainView(frame: contentFrame, childVcs: childVcs, paretentViewController: self)
+        
+        contentView.delegate = self
+        
         return contentView
     }()
     
@@ -49,12 +56,19 @@ class HomeViewController: UIViewController {
         
     }
     
-    
-    // 1. 首页界面的titleView 封装
-    // 2. pageController 的封装
-    // 3. 处理titleView 与 pageController的逻辑
-    
-    
+    /*
+     1. 首页界面的titleView 封装
+        1> 自定义view，并且自定义构造函数
+        2> 添加子控件：1>UIScrollView  2>设置UIcollectionView 3>设置顶部的线段
+     2. pageController 的封装
+        1> 自定义View并且自定义构造函数
+        2> 添加子控件 1>UICollectionView 2>给UICollectionView设置内容
+     3. 处理titleView 与 pageController的逻辑
+        1> PageTitleView发生点击事件
+           1.1> 将PageTitleView中逻辑进行处理
+           1.2> 告知PageTitleView滚动到正确的控制器
+        2>PageContentView的滚动
+    */
     
     
 
@@ -73,8 +87,8 @@ extension HomeViewController {
         view.addSubview(pageTitleview)
 
         // 3. 添加 pageContentVikew
-        view.addSubview(pageContentVikew)
-        pageContentVikew.backgroundColor = UIColor.purple
+        view.addSubview(pageContentView)
+        pageContentView.backgroundColor = UIColor.purple
         
     }
     
@@ -104,6 +118,7 @@ extension HomeViewController {
 //        historyBtn.backgroundColor = UIColor.red
 ////        historyBtn.sizeToFit()
 //        // CGPointZero 报错 ，不能使用
+        
 //        historyBtn.frame = CGRect(origin: CGPoint(x:0,y:0), size: size)
 //        print("historyBtn.frame = \(historyBtn.frame)")
 //        let historyItem =  UIBarButtonItem(customView: historyBtn)
@@ -123,6 +138,34 @@ extension HomeViewController {
     
     }
 
+
+}
+
+
+// mark - 遵守PageTitleviewDelegate协议
+extension HomeViewController : PageTitleviewDelegate {
+
+    func pageTitleView(titleView: PageTitleview, selectIndex index: Int) {
+        
+        print(index)
+        
+        pageContentView.setCurrentIndex(currentIndex: index)
+        
+        
+        
+    }
+
+
+}
+
+
+// mark- 遵守PageContainViewDelegate协议
+extension HomeViewController : PageContainViewDelegate {
+
+    func pageContainView(contentView: PageContainView, progress: CGFloat, sourceIndex: Int, targetIndex: Int) {
+        
+        pageTitleview.setTitleWithProgress(progress: progress, sourceIndex: sourceIndex, targetIndex: targetIndex)
+    }
 
 }
 
