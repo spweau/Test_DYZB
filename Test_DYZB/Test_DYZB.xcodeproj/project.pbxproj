@@ -23,6 +23,10 @@
 		81E1BB511E5D72BC008167C8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1BB501E5D72BC008167C8 /* MainViewController.swift */; };
 		81E1BB531E5D7304008167C8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1BB521E5D7304008167C8 /* HomeViewController.swift */; };
 		81E1BB581E5D79D4008167C8 /* UIBarButtonItem-Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1BB571E5D79D4008167C8 /* UIBarButtonItem-Extention.swift */; };
+		81E1BB5A1E5D86EE008167C8 /* PageTitleview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1BB591E5D86EE008167C8 /* PageTitleview.swift */; };
+		81E1BB5C1E5D88AD008167C8 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1BB5B1E5D88AD008167C8 /* Common.swift */; };
+		81E1BB5E1E5DA841008167C8 /* PageContainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1BB5D1E5DA841008167C8 /* PageContainView.swift */; };
+		81E1BB601E5DAEAE008167C8 /* UIColor-Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1BB5F1E5DAEAE008167C8 /* UIColor-Extention.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +69,10 @@
 		81E1BB501E5D72BC008167C8 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		81E1BB521E5D7304008167C8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		81E1BB571E5D79D4008167C8 /* UIBarButtonItem-Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extention.swift"; sourceTree = "<group>"; };
+		81E1BB591E5D86EE008167C8 /* PageTitleview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleview.swift; sourceTree = "<group>"; };
+		81E1BB5B1E5D88AD008167C8 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		81E1BB5D1E5DA841008167C8 /* PageContainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContainView.swift; sourceTree = "<group>"; };
+		81E1BB5F1E5DAEAE008167C8 /* UIColor-Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extention.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +212,7 @@
 		265AFDAB1E1E2527002F31CF /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				81E1BB5B1E5D88AD008167C8 /* Common.swift */,
 				81E1BB541E5D797A008167C8 /* Extention */,
 			);
 			path = Tool;
@@ -268,6 +277,8 @@
 		81E1BB4F1E5D72A4008167C8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				81E1BB591E5D86EE008167C8 /* PageTitleview.swift */,
+				81E1BB5D1E5DA841008167C8 /* PageContainView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -276,6 +287,7 @@
 			isa = PBXGroup;
 			children = (
 				81E1BB571E5D79D4008167C8 /* UIBarButtonItem-Extention.swift */,
+				81E1BB5F1E5DAEAE008167C8 /* UIColor-Extention.swift */,
 			);
 			path = Extention;
 			sourceTree = "<group>";
@@ -421,9 +433,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81E1BB5A1E5D86EE008167C8 /* PageTitleview.swift in Sources */,
+				81E1BB5E1E5DA841008167C8 /* PageContainView.swift in Sources */,
+				81E1BB601E5DAEAE008167C8 /* UIColor-Extention.swift in Sources */,
 				265AFD781E1DF665002F31CF /* AppDelegate.swift in Sources */,
 				81E1BB511E5D72BC008167C8 /* MainViewController.swift in Sources */,
 				81E1BB531E5D7304008167C8 /* HomeViewController.swift in Sources */,
+				81E1BB5C1E5D88AD008167C8 /* Common.swift in Sources */,
 				81E1BB581E5D79D4008167C8 /* UIBarButtonItem-Extention.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
