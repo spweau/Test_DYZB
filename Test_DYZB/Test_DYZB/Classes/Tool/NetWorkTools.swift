@@ -38,7 +38,7 @@ class NetWorkTools {
                 }
                 
                 // 4. 将结果回调出去
-                print(result)
+//                print(result)
                 
                 finishCallback(result as AnyObject)
                 

@@ -22,6 +22,10 @@ private let kHeaderViewID = "kHeaderViewID"
 
 class RecommendViewController: UIViewController {
 
+    //懒加载 属性
+    fileprivate lazy var recommendVM : RecommendViewModel = RecommendViewModel()
+    
+    
     // lazy load
     fileprivate lazy var collectionView : UICollectionView = { [unowned self] in
     
@@ -64,10 +68,11 @@ class RecommendViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor.red
         
-        // 设置UI界面
+        // 1.  设置UI界面
         setupUI()
         
-        
+        // 2. 网络请求
+        loadData()
         
         
     }
@@ -88,6 +93,24 @@ extension RecommendViewController {
     }
 
 }
+
+// mark - 网络请求
+extension RecommendViewController {
+
+    fileprivate func loadData() {
+    
+//        NetWorkTools.requestData(type: .GET, URLString: "http://httpbin.org/get", parameters: [ "name": "spweau", "age" : 26]) { (result) in
+//            
+//            
+//            print(result)
+//        }
+        
+        recommendVM.requestData()
+    
+    }
+
+}
+
 
 
 //Mark - UICollectionView 的 dataSource 代理方法
