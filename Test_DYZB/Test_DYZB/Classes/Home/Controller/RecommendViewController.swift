@@ -11,10 +11,12 @@ import UIKit
 // mark- 定义常量
 private let kItemMargin : CGFloat = 10
 private let kItemW = (kScreenW - 3 * kItemMargin) / 2
-private let kItemH = kItemW * 3 / 4
+private let kNormalItemH = kItemW * 3 / 4
+private let kPrettyItemH = kItemW * 4 / 3
 private let kHeaderViewH : CGFloat = 50
 
 private let kNormalCellID = "kNormalCellID"
+private let kPrettyCellID = "kPrettyCellID"
 private let kHeaderViewID = "kHeaderViewID"
 
 
@@ -25,7 +27,7 @@ class RecommendViewController: UIViewController {
     
         // 1. 创建布局
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: kItemW, height: kItemH)
+        layout.itemSize = CGSize(width: kItemW, height: kNormalItemH)
         layout.minimumLineSpacing = 0
         layout.minimumInteritemSpacing = kItemMargin
         // 设置组头
@@ -42,10 +44,17 @@ class RecommendViewController: UIViewController {
         // 添加约束
         collectionView.autoresizingMask = [.flexibleHeight,.flexibleWidth]
         // 注册cell
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: kNormalCellID)
+        //        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: kNormalCellID)
+        
+        collectionView.register( UINib(nibName: "CollectionNormalCell", bundle: nil) , forCellWithReuseIdentifier: kNormalCellID)
+        collectionView.register( UINib(nibName: "CollectionPrettyCell", bundle: nil) , forCellWithReuseIdentifier: kPrettyCellID)
+        
         
         // 注册组头View
-        collectionView.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: kHeaderViewID)
+        
+//        collectionView.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: kHeaderViewID)
+        
+        collectionView.register( UINib(nibName: "CollectionHeaderView", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: kHeaderViewID)
         
         return collectionView
     }()
@@ -57,6 +66,7 @@ class RecommendViewController: UIViewController {
         
         // 设置UI界面
         setupUI()
+        
         
         
         
@@ -81,7 +91,7 @@ extension RecommendViewController {
 
 
 //Mark - UICollectionView 的 dataSource 代理方法
-extension RecommendViewController : UICollectionViewDataSource {
+extension RecommendViewController : UICollectionViewDataSource ,UICollectionViewDelegateFlowLayout{
 
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         
@@ -103,9 +113,21 @@ extension RecommendViewController : UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCellID, for: indexPath)
+        // 1. 定义cell
+        var cell : UICollectionViewCell
         
-        cell.backgroundColor = UIColor.red
+        
+        // 2. 取cell
+        if indexPath.section == 1 {
+            
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: kPrettyCellID, for: indexPath)
+        } else {
+        
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCellID, for: indexPath)
+        }
+        
+        
+        cell.backgroundColor = UIColor.white
         
         return cell
     }
@@ -116,9 +138,19 @@ extension RecommendViewController : UICollectionViewDataSource {
         // 1. 取出section的headerView
         let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath)
         
-        headerView.backgroundColor = UIColor.green
+       // headerView.backgroundColor = UIColor.green
         
         return headerView
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        if indexPath.section == 1 {
+            
+            return CGSize(width: kItemW, height: kPrettyItemH)
+        }
+    
+        return CGSize(width: kItemW, height: kNormalItemH)
     }
     
 }

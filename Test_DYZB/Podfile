@@ -1,0 +1,12 @@
+# Uncomment the next line to define a global platform for your project
+# 平台 8.0开始
+platform :ios, '8.0'
+# Comment the next line if you're not using Swift and don't want to use dynamic frameworks 如果是oc 则下面的一句就注释掉，如果是swift就打开（swift不支持动态库）
+use_frameworks!
+
+target 'Test_DYZB' do
+
+
+ pod 'Alamofire'
+
+end
