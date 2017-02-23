@@ -21,7 +21,14 @@ extension RecommendViewModel {
         
         // 2. 请求第二部分颜值数据
         
-        // 3. 请求第三部分游戏书库
+        // 3. 请求第三部分游戏书库 http://capi.douyucdn.cn/api/v1/getHotCate 有数据
+        // 3.1 获取当前时间
+        
+        
+        NetWorkTools.requestData(type: .GET, URLString: "http://capi.douyucdn.cn/api/v1/getHotCate", parameters: ["limit" : 4 , "offset" : 0 ,"time" : NSDate.getCurrentTime()]) { (result) in
+            
+            print(result)
+        }
         
         
     }

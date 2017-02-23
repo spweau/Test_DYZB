@@ -26,6 +26,7 @@
 		81869B251E5EB4C2006E898D /* CollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81869B231E5EB4C2006E898D /* CollectionPrettyCell.xib */; };
 		81869B631E5ED3D2006E898D /* NetWorkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81869B621E5ED3D2006E898D /* NetWorkTools.swift */; };
 		81869B661E5EDA65006E898D /* RecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81869B651E5EDA65006E898D /* RecommendViewModel.swift */; };
+		81869B681E5EE00F006E898D /* NSDate-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81869B671E5EE00F006E898D /* NSDate-Extension.swift */; };
 		81E1BB471E5D6F6E008167C8 /* TestSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81E1BB461E5D6F6E008167C8 /* TestSB.storyboard */; };
 		81E1BB491E5D7108008167C8 /* TestSB1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81E1BB481E5D7108008167C8 /* TestSB1.storyboard */; };
 		81E1BB511E5D72BC008167C8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E1BB501E5D72BC008167C8 /* MainViewController.swift */; };
@@ -83,6 +84,7 @@
 		81869B231E5EB4C2006E898D /* CollectionPrettyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionPrettyCell.xib; sourceTree = "<group>"; };
 		81869B621E5ED3D2006E898D /* NetWorkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkTools.swift; sourceTree = "<group>"; };
 		81869B651E5EDA65006E898D /* RecommendViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewModel.swift; sourceTree = "<group>"; };
+		81869B671E5EE00F006E898D /* NSDate-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate-Extension.swift"; sourceTree = "<group>"; };
 		81E1BB461E5D6F6E008167C8 /* TestSB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TestSB.storyboard; path = Test_DYZB/Classes/Home/TestSB.storyboard; sourceTree = SOURCE_ROOT; };
 		81E1BB481E5D7108008167C8 /* TestSB1.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TestSB1.storyboard; path = Test_DYZB/Classes/Home/TestSB1.storyboard; sourceTree = SOURCE_ROOT; };
 		81E1BB501E5D72BC008167C8 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -330,6 +332,7 @@
 			children = (
 				81E1BB571E5D79D4008167C8 /* UIBarButtonItem-Extention.swift */,
 				81E1BB5F1E5DAEAE008167C8 /* UIColor-Extention.swift */,
+				81869B671E5EE00F006E898D /* NSDate-Extension.swift */,
 			);
 			path = Extention;
 			sourceTree = "<group>";
@@ -556,6 +559,7 @@
 				81E1BB511E5D72BC008167C8 /* MainViewController.swift in Sources */,
 				81E1BB531E5D7304008167C8 /* HomeViewController.swift in Sources */,
 				81E1BB5C1E5D88AD008167C8 /* Common.swift in Sources */,
+				81869B681E5EE00F006E898D /* NSDate-Extension.swift in Sources */,
 				81869B241E5EB4C2006E898D /* CollectionPrettyCell.swift in Sources */,
 				81869B201E5EADC3006E898D /* CollectionNormalCell.swift in Sources */,
 				81E1BB581E5D79D4008167C8 /* UIBarButtonItem-Extention.swift in Sources */,
