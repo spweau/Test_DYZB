@@ -32,7 +32,9 @@ class NetWorkTools {
                 
                 // 3. 获取结果
                 guard let result = response.result.value else {
-                    
+                    // http://www.douyutv.com/api/v1/slide/6?version=2.300
+                    print(parameters ?? "parameters==nil")
+                    print(URLString)
                     print(response.result.error ?? "error not info")
                     return
                 }

@@ -15,6 +15,10 @@ private let kNormalItemH = kItemW * 3 / 4
 private let kPrettyItemH = kItemW * 4 / 3
 private let kHeaderViewH : CGFloat = 50
 
+
+private let kCycleViewH = kScreenW * 3 / 8
+private let kGameViewH : CGFloat = 90
+
 private let kNormalCellID = "kNormalCellID"
 private let kPrettyCellID = "kPrettyCellID"
 private let kHeaderViewID = "kHeaderViewID"
@@ -22,6 +26,9 @@ private let kHeaderViewID = "kHeaderViewID"
 
 class RecommendViewController: UIViewController {
 
+
+    
+    
     //懒加载 属性
     fileprivate lazy var recommendVM : RecommendViewModel = RecommendViewModel()
     
@@ -63,6 +70,19 @@ class RecommendViewController: UIViewController {
         return collectionView
     }()
     
+    fileprivate lazy var cycleView : RecommendCycleView = {
+    
+        let cycleView = RecommendCycleView.recommendCycleView()
+        cycleView.frame = CGRect(x: 0, y: -(kCycleViewH + kGameViewH), width: kScreenW, height: kCycleViewH)
+        return cycleView
+    }()
+    
+    fileprivate lazy var gameView : RecommendGameView = {
+        let gameView = RecommendGameView.recommendGameView()
+        gameView.frame = CGRect(x: 0, y: -kGameViewH, width: kScreenW, height: kGameViewH)
+        return gameView
+    }()
+    
     // cycle life
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -88,7 +108,14 @@ extension RecommendViewController {
         //1.添加collectionView
         view.addSubview(collectionView)
     
+        // 2.将CycleView添加到UICollectionView中
+        collectionView.addSubview(cycleView)
         
+        // 3.将gameView添加collectionView中
+        collectionView.addSubview(gameView)
+        
+        // 4.设置collectionView的内边距
+        collectionView.contentInset = UIEdgeInsets(top: kCycleViewH + kGameViewH, left: 0, bottom: 0, right: 0)
         
     }
 
@@ -99,17 +126,23 @@ extension RecommendViewController {
 
     fileprivate func loadData() {
     
-//        NetWorkTools.requestData(type: .GET, URLString: "http://httpbin.org/get", parameters: [ "name": "spweau", "age" : 26]) { (result) in
-//            
-//            
+//        NetWorkTools.requestData(type: .GET, URLString: "http://httpbin.org/get", parameters: [ "name": "spweau", "age" : 26]) { (result) in 
 //            print(result)
 //        }
-        
+        // 1.请求推荐数据
         recommendVM.requestData { 
             
             self.collectionView.reloadData()
         }
     
+        // 2.请求轮播数据
+        recommendVM.requestCycleData {
+            
+            print("数据请求完成")
+            
+            self.cycleView.cycleModels = self.recommendVM.cycleModels
+        }
+        
     }
 
 }
