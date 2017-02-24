@@ -6,7 +6,7 @@ use_frameworks!
 
 target 'Test_DYZB' do
 
-
- pod 'Alamofire'
+pod 'Alamofire'
+pod 'Kingfisher'
 
 end

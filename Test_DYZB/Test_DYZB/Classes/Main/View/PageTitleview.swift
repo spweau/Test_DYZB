@@ -15,7 +15,7 @@ protocol PageTitleviewDelegate : class {
     func pageTitleView (titleView : PageTitleview , selectIndex index:Int )
 }
 
-// mark- 定义常量
+// MARK: - 定义常量
 private let kScrollLineH : CGFloat = 2
 // 灰色
 private let kNormalColor : (CGFloat,CGFloat,CGFloat) = (85,85,85)
@@ -24,7 +24,7 @@ private let kSelectColor : (CGFloat,CGFloat,CGFloat) = (255,128,0)
 
 class PageTitleview: UIView {
  
-    // mark- 定义属性
+    // MARK: - 定义属性
     fileprivate var currentIndex : Int = 0
     fileprivate var titles : [String]
     
@@ -162,16 +162,22 @@ extension PageTitleview {
 }
 
 
-// mark : 监听label 的点击
+// MARK: 监听label 的点击
 extension PageTitleview {
 
     // 手势点击方法 前面 必须加上 @objc
     @objc fileprivate func titleLAbelClick(tapGes : UITapGestureRecognizer){
     
         print("----------")
+
         
         // 1. 获取 当前的label
         guard let currentLabel = tapGes.view as? UILabel  else { return }
+        
+        
+        // 1.如果是重复点击同一个Title,那么直接返回
+        if currentLabel.tag == currentIndex { return }
+        
         
         
         // 2. 获取之前的label

@@ -71,7 +71,13 @@
                 <constraint firstItem="eHa-yp-jj3" firstAttribute="centerY" secondItem="AuM-T9-RqB" secondAttribute="centerY" id="slY-aN-DIZ"/>
             </constraints>
             <size key="customSize" width="235" height="197"/>
-            <point key="canvasLocation" x="12" y="37"/>
+            <connections>
+                <outlet property="iconImageView" destination="UfK-QS-Wsy" id="sCZ-Cq-l3c"/>
+                <outlet property="nickNameLabel" destination="rqu-4h-Tdv" id="nGr-N0-00R"/>
+                <outlet property="onlineBtn" destination="zvo-RK-aPy" id="zEk-pm-rzp"/>
+                <outlet property="roomNameLabel" destination="eHa-yp-jj3" id="gdV-nx-Ve1"/>
+            </connections>
+            <point key="canvasLocation" x="-145" y="30"/>
         </collectionViewCell>
     </objects>
 </document>
