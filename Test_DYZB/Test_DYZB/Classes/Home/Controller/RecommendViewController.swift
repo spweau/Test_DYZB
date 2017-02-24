@@ -112,7 +112,7 @@ extension RecommendViewController {
         collectionView.addSubview(cycleView)
         
         // 3.将gameView添加collectionView中
-        collectionView.addSubview(gameView)
+        //collectionView.addSubview(gameView)
         
         // 4.设置collectionView的内边距
         collectionView.contentInset = UIEdgeInsets(top: kCycleViewH + kGameViewH, left: 0, bottom: 0, right: 0)
@@ -131,6 +131,8 @@ extension RecommendViewController {
 //        }
         // 1.请求推荐数据
         recommendVM.requestData { 
+            
+            print("--------------")
             
             self.collectionView.reloadData()
         }
@@ -160,7 +162,7 @@ extension RecommendViewController : UICollectionViewDataSource ,UICollectionView
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-//        // 第一组 8个 ， 其它 4个
+        // 第一组 8个 ， 其它 4个
 //        if section == 0 {
 //        
 //            return 8

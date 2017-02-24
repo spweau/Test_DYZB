@@ -114,9 +114,8 @@ extension RecommendViewModel {
         
         // 拼接的字符串
         //http://capi.douyucdn.cn/api/v1/getHotCate?limit=4&offset=0&time=
-//        let nowTimeStr : String = NSDate.getCurrentTime()
-//        
-//        print("http://capi.douyucdn.cn/api/v1/getHotCate?limit=4&offset=0&time=\(nowTimeStr)")
+        let nowTimeStr : String = NSDate.getCurrentTime()
+        print("http://capi.douyucdn.cn/api/v1/getHotCate?limit=4&offset=0&time=\(nowTimeStr)")
         
         dGroup.enter()
         

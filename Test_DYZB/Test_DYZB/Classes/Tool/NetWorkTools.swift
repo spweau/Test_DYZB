@@ -21,7 +21,15 @@ enum MethodType {
 class NetWorkTools {
 
     
+
+    
     class func requestData(type : MethodType , URLString : String , parameters : [String : Any]? = nil , finishCallback : @escaping (_ result : AnyObject) -> ()) {
+        
+        
+        
+        
+        
+        print(URLString,parameters ?? "parameters == nil")
         
         // 1. 获取类型
         let method = type == .GET ? HTTPMethod.get : HTTPMethod.post
@@ -40,7 +48,7 @@ class NetWorkTools {
                 }
                 
                 // 4. 将结果回调出去
-//                print(result)
+                print(result)
                 
                 finishCallback(result as AnyObject)
                 

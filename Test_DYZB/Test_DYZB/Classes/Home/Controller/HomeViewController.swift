@@ -80,7 +80,10 @@ class HomeViewController: UIViewController {
 extension HomeViewController {
 
     fileprivate func setupUI() {
-    
+        
+        // 0.不需要调整UIScrollView的内边距
+        automaticallyAdjustsScrollViewInsets = false
+        
         // 1. 设置导航栏
         setupNavigationBar()
     
