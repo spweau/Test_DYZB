@@ -105,7 +105,10 @@ extension RecommendViewController {
 //            print(result)
 //        }
         
-        recommendVM.requestData()
+        recommendVM.requestData { 
+            
+            self.collectionView.reloadData()
+        }
     
     }
 
@@ -119,19 +122,22 @@ extension RecommendViewController : UICollectionViewDataSource ,UICollectionView
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         
         // 默认12
-        return 12
+        return recommendVM.anchorGroups.count
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        // 第一组 8个 ， 其它 4个
-        if section == 0 {
+//        // 第一组 8个 ， 其它 4个
+//        if section == 0 {
+//        
+//            return 8
+//        }
+//        
+//        return 4
+
         
-            return 8
-        }
-        
-        return 4
-        
+        let group = recommendVM.anchorGroups[section]
+        return group.anchors.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -159,9 +165,12 @@ extension RecommendViewController : UICollectionViewDataSource ,UICollectionView
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         
         // 1. 取出section的headerView
-        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath)
+        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath) as! CollectionHeaderView
         
-       // headerView.backgroundColor = UIColor.green
+        // headerView.backgroundColor = UIColor.green
+        // 取出模型
+        headerView.group = recommendVM.anchorGroups[indexPath.section]
+        
         
         return headerView
     }
