@@ -23,11 +23,11 @@ class NetWorkTools {
     
 
     
-    class func requestData(type : MethodType , URLString : String , parameters : [String : Any]? = nil , finishCallback : @escaping (_ result : AnyObject) -> ()) {
+    class func requestData(type : MethodType , URLString : String , parameters : [String : Any]? = nil , finishCallback : @escaping (_ result : Any) -> ()) {
         
         
         
-        
+        // Any 和 AnyObject 的区别
         
         print(URLString,parameters ?? "parameters == nil")
         
@@ -50,7 +50,7 @@ class NetWorkTools {
                 // 4. 将结果回调出去
                 print(result)
                 
-                finishCallback(result as AnyObject)
+                finishCallback(result)
                 
                 
         }
